@@ -247,12 +247,6 @@ if Settings['Made By JoJo#2494'].TRAILS then
         STAND.Character.Humanoid:WaitForChild("TrailEffects"):Destroy()
     end)()
 end
---//------------------------------------------------------------------------------------------\\--
-repeat
-    rs.Stepped:Wait()
-    STAND.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Ignored.Shop["[Paintball Mask] - $60"].Head.Position)
-    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Paintball Mask] - $60"].ClickDetector)
-until STAND.Backpack:FindFirstChild("Mask")
 --//------------------------------------------------------------------------------------------\\-- 
 if Settings['Made By JoJo#2494'].TELEPORTMAIN then
     pcall(function()
@@ -261,16 +255,6 @@ if Settings['Made By JoJo#2494'].TELEPORTMAIN then
 else
     STAND.Character.HumanoidRootPart.CFrame = STAND.Character.HumanoidRootPart.CFrame*CFrame.new(0,3,0)
 end
---//------------------------------------------------------------------------------------------\\--
-mask = STAND.Backpack:FindFirstChild("Mask")
-melee = STAND.Backpack:FindFirstChild("Combat")
-mask.Parent = STAND.Character
-mask:Activate()
-mask.Parent = STAND.Backpack 
-melee.Parent = STAND.Character 
-STAND.Backpack:WaitForChild("Mask")
-STAND.Character:WaitForChild('In-gameMask'):FindFirstChildWhichIsA("Model"):Destroy()
-STAND.Character:WaitForChild('In-gameMask'):FindFirstChild('Handle'):Destroy() 
 --//------------------------------------------------------------------------------------------\\-- 
 function AnimPlay(ID, SPEED)
     local animation = Instance.new('Animation', game:GetService("Workspace"))
