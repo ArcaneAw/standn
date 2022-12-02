@@ -6,7 +6,6 @@ if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
 end
 --//------------------------------------------------------------------------------------------\\--
 for i,v in pairs(Settings['Made By JoJo#2494'].STANDS) do 
-if game:GetService("Players").LocalPlayer.Name == v then
     STAND = game:GetService("Players"):FindFirstChild(tostring(v))
     OWNER = game:GetService("Players"):WaitForChild(Settings['Made By JoJo#2494'].OWNER)
     rs = game:GetService("RunService") 
@@ -1000,5 +999,4 @@ coroutine.wrap(function()
         end;
     end;
 end)()
-end
 end
